@@ -6,32 +6,27 @@ Kinect の スケルトンデータを Blender へ送信し、Blender の bone �
 
 実行環境
 --------
-* Microsoft Windows 11 以上
-* [NET Framework 4 Client Profile](http://www.microsoft.com/ja-jp/net/netfx4/download.aspx "NET Framework 4 Client Profile") 以上
+* Microsoft Windows 10 以降
+* [NET Framework 4 Client Profile](http://www.microsoft.com/ja-jp/net/netfx4/download.aspx "NET Framework 4 Client Profile") 以降
 * [Kinect for Windows](http://www.microsoft.com/en-us/kinectforwindows/ "Kinect for Windows")
-* [Kinect for Windows Runtime v1.8](http://www.microsoft.com/en-us/download/details.aspx?id=34810 "Kinect for Windows Runtime v1.8") 以上
+* [Kinect for Windows Runtime v1.8](http://www.microsoft.com/en-us/download/details.aspx?id=34810 "Kinect for Windows Runtime v1.8") 以降
 * [Blender 3.6](http://www.blender.org/ "Blender") 以降
 
 インストール
 ------------
-1. [Downloads](https://github.com/asahiufo/AMK2B/downloads "Downloads") からツールをダウンロードします。
-1. ダウンロードした圧縮ファイルを任意のフォルダへ展開します。  
-   （以降、展開したフォルダのことを "`AMK2B`" と記載します。）
-1. 展開したフォルダ内の Blender のアドオンを Blender へインストールします。
-   1. 「`AMK2B/amk2b`」フォルダを「`<Blenderのインストールディレクトリ>/<バージョン>/scripts/addons`」へコピーします。
-   1. Blender を起動し、「`File ＞ User Preferences...`」をクリックします。
-   1. 「`Addons ＞ Categories ＞ Development`」と順にクリックします。
-   1. 「`Development: AMK2B - Kinect Data Receiver`」の右端のボックスをチェックします。
-   1. 編集画面でNキーを押し、右側に「`AMK2B`」タブが追加されていれば成功です。
+1. [Release](https://github.com/TNKSoftware/AMK2B/releases "Release") からツールをダウンロードします。
+1. 「KinectDataSender_x86」を任意のフォルダへ展開します。  
+1. 「amk2b.zip」をBlender へアドオンとしてインストールします。
+1. 編集画面でNキーを押し、右側のツールバーに「`AMK2B`」タブが追加されていればインストール完了です。
 
 アンインストール
 ----------------
-1. Blender へ追加した「`amk2b`」フォルダを削除します。
-1. ダウンロードした「`AMK2B`」フォルダを削除します。
+1. Blender へ追加した「`amk2b`」アドオンをBlenderから削除します。
+1. ダウンロードした「`KinectDataSender`」を削除します。
 
 使い方
 ------
-1. 「`AMK2B/KinectDataSender/<お使いの環境>/KinectDataSender.exe`」を起動します。  
+1. 「`KinectDataSender.exe`」を起動します。  
    「`Kinect Data Sender`」画面が開きます。
 1. 「`Kinect Data Sender`」画面の「`詳細設定`」で、Skeleton データを送信したい部位にチェックを入れます。
 1. チェックを入れたチェックボックスに対応するテキストボックスへ、座標情報を適用する Blender のボーン名を入力します。  
@@ -55,17 +50,7 @@ Kinect の スケルトンデータを Blender へ送信し、Blender の bone �
 1. Blender の「`AMK2B`」パネルの「`Recording`」ボタンを押下します。  
    カウントダウンが開始され、0 になるとモーションの録画が始まります。  
    録画は最初のフレームから最後のフレームまで行われ、停止します。
-1. 出来上がったモデルとアニメーションデータを煮るなり焼くなり、Flash で使うなり。
-
-ソースから実行する場合
-------
-お使いの環境に合わせて、「Bespoke.Common.dll」と「Bespoke.Common.Osc.dll」の参照を切り替えた上で実行して下さい。
-* x86対応  
-  AMK2B\app\KinectDataSender\KinectDataSender\InfrastructureAssemblies\x86\Bespoke.Common.dll  
-  AMK2B\app\KinectDataSender\KinectDataSender\InfrastructureAssemblies\x86\Bespoke.Common.Osc.dll
-* x64対応  
-  AMK2B\app\KinectDataSender\KinectDataSender\InfrastructureAssemblies\x64\Bespoke.Common.dll  
-  AMK2B\app\KinectDataSender\KinectDataSender\InfrastructureAssemblies\x64\Bespoke.Common.Osc.dll
+1. 出来上がったモデルとアニメーションデータはご自由にどうぞ。
 
 Licensing
 ---------
