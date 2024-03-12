@@ -29,8 +29,7 @@ import socketserver
 import struct
 import time
 
-__all__ = ['Deserializer', 'RequestHandler', 'Server', 'ForkingServer',
-           'ThreadingServer', 'Method']
+__all__ = ['Deserializer', 'RequestHandler', 'Server', 'ThreadingServer', 'Method']
 
 
 logger = logging.getLogger('oscd')
@@ -229,15 +228,6 @@ class Server(socketserver.UDPServer):
 
     def remove_method(self, method):
         self.methods.remove(method)
-
-
-class ForkingServer(socketserver.ForkingMixIn, Server):
-    """
-    An asynchronous server which forks a new process to handle incoming
-    requests.
-
-    """
-    pass
 
 
 class ThreadingServer(socketserver.ThreadingMixIn, Server):

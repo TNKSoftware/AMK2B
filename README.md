@@ -2,13 +2,15 @@ AMK2B
 =====
 Kinect の スケルトンデータを Blender へ送信し、Blender の bone へ適用することで、簡単なモーションキャプチャを実現するツールです。
 
+このプロジェクトでは、付属のアドオンがBlender 3.xでも動作するようにコードが修正されています。
+
 実行環境
 --------
-* Microsoft Windows 7 以上
+* Microsoft Windows 11 以上
 * [NET Framework 4 Client Profile](http://www.microsoft.com/ja-jp/net/netfx4/download.aspx "NET Framework 4 Client Profile") 以上
 * [Kinect for Windows](http://www.microsoft.com/en-us/kinectforwindows/ "Kinect for Windows")
-* [Kinect for Windows Runtime v1.5](http://www.microsoft.com/en-us/download/details.aspx?id=34810 "Kinect for Windows Runtime v1.5") 以上
-* [Blender 2.64](http://www.blender.org/ "Blender") 以上（2.5以上なら大丈夫かも？）
+* [Kinect for Windows Runtime v1.8](http://www.microsoft.com/en-us/download/details.aspx?id=34810 "Kinect for Windows Runtime v1.8") 以上
+* [Blender 3.6](http://www.blender.org/ "Blender") 以降
 
 インストール
 ------------
@@ -20,7 +22,7 @@ Kinect の スケルトンデータを Blender へ送信し、Blender の bone �
    1. Blender を起動し、「`File ＞ User Preferences...`」をクリックします。
    1. 「`Addons ＞ Categories ＞ Development`」と順にクリックします。
    1. 「`Development: AMK2B - Kinect Data Receiver`」の右端のボックスをチェックします。
-   1. この結果、「`3D View`」の左に「`AMK2B`」パネルが追加されていれば成功です。
+   1. 編集画面でNキーを押し、右側に「`AMK2B`」タブが追加されていれば成功です。
 
 アンインストール
 ----------------

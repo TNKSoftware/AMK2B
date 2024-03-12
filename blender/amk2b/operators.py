@@ -31,7 +31,7 @@ class KinectDataApplyingOperator(bpy.types.Operator):
         if not bpy.amk2b.kinect_data_applying_started:
             self._event = context.window_manager.event_timer_add(
                 1 / 60,
-                context.window
+                window=context.window
             )
             context.window_manager.modal_handler_add(self)
             bpy.amk2b.kinect_data_applying_started = True
@@ -69,7 +69,7 @@ class RecordingOperator(bpy.types.Operator):
         if not bpy.amk2b.recording_pre_started:
             self._event = context.window_manager.event_timer_add(
                 1 / 60,
-                context.window
+                window=context.window
             )
             context.window_manager.modal_handler_add(self)
             bpy.amk2b.recording_wait_time = 500

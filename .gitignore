@@ -3,3 +3,5 @@ app/KinectDataSender/KinectDataSender/bin
 app/KinectDataSender/KinectDataSender.suo
 /blender/*.blend1
 /blender/*.blend2
+app/KinectDataSender/.vs
+app/KinectDataSender/KinectDataSender/.vs
