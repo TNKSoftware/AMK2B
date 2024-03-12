@@ -19,7 +19,6 @@ bl_info = {
 first_startup = "bpy" not in locals()
 
 def register():
-    print("REG")
     if first_startup:
         pass
 

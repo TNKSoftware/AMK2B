@@ -7,7 +7,6 @@ class AMK2BPANEL_PT_INIT(bpy.types.Panel):
     bl_region_type = 'UI'
 
     def draw(self, context):
-        print("ADS")
         layout = self.layout
 
         row = layout.row()
